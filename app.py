@@ -144,12 +144,6 @@ if uploaded_file is not None:
 
         active_model.fit(X, y)
 
-        st.success("Temporary model trained on your uploaded dataset!")
-
-        st.caption(
-            "The temporary model uses the uploaded data. "
-            "Your original Restaurant 2 model file is not modified."
-        )
 
         if len(df) < 30:
             st.error("Please upload at least 30 days of historical data.")
